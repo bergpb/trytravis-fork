@@ -4,9 +4,6 @@ sudo: false
 matrix:
   include:
     # Linting
-    - python: 2.7
-      env: TOXENV=lint
-
     - python: 3.6
       env: TOXENV=lint
 
@@ -15,9 +12,6 @@ matrix:
       env: TOXENV=packaging
 
     # Linux Builds
-    - python: 2.7
-      env: TOXENV=py27
-
     - python: 3.5
       env: TOXENV=py35
 
@@ -34,10 +28,6 @@ matrix:
       env: TOXENV=py39
       
     # Mac OS Builds
-    - os: osx
-      language: generic
-      env: TOXENV=py27
-
     - os: osx
       language: generic
       env: TOXENV=py35
